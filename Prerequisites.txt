@@ -1,0 +1,13 @@
+Python Virtual Environment
+
+Anaconda Navigator & Python
+
+Rasa NLU Library
+
+Text Data
+
+Training Data Format
+
+NLU Pipeline Configuration
+
+Development Environment (Visual Studio Code or similar IDE)
