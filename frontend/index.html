@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Recommender Bot</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <header class="chat-header">
+            <div class="header-info">
+                <div class="bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h1>QuoteBot AI</h1>
+                    <span class="status"><span class="status-dot"></span> Online</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+
+        <!-- Chat Area -->
+        <main class="chat-box" id="chat-box">
+            <!-- Initial Welcome Message -->
+            <div class="message bot">
+                <div class="message-content">
+                    <p>Hello! 👋 I'm your AI Quote Assistant. I can share quotes to inspire, motivate, or make you laugh.</p>
+                </div>
+                <span class="message-time">Just now</span>
+            </div>
+            
+            <div class="message bot">
+                <div class="message-content">
+                    <p>Try saying something like <strong>"I need motivation"</strong>, <strong>"Tell me a joke"</strong>, or <strong>"How to be successful?"</strong></p>
+                </div>
+                <span class="message-time">Just now</span>
+            </div>
+        </main>
+
+        <!-- Typing Indicator (Hidden by default) -->
+        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Input Area -->
+        <footer class="chat-input-area">
+            <form id="chat-form">
+                <input type="text" id="user-input" placeholder="Ask for a quote..." autocomplete="off" required>
+                <button type="submit" id="send-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
